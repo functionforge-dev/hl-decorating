@@ -115,3 +115,8 @@ img{max-width:100%;height:auto}
 .back-to-top:hover{color:var(--text)}
 
 :focus{outline:2px solid var(--ring);outline-offset:2px}
+
+/* Floating mobile CTA */
+@media (max-width: 760px){
+  .fab-cta{position:fixed;right:16px;bottom:16px;z-index:60}
+}
