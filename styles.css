@@ -47,8 +47,8 @@ img{max-width:100%;height:auto}
 
 @media (max-width: 760px){
   .nav-toggle{display:block}
-  .primary-nav{position:fixed;inset:auto 0 0 0;background:var(--bg);border-top:1px solid rgba(0,0,0,.06);transform:translateY(100%);transition:transform .25s ease;}
-  .primary-nav.open{transform:translateY(0)}
+  .primary-nav{position:fixed;inset:auto 0 0 0;background:var(--bg);border-top:1px solid rgba(0,0,0,.06);transform:translateY(100%);transition:transform .25s ease;pointer-events:none}
+  .primary-nav.open{transform:translateY(0);pointer-events:auto}
   .primary-nav ul{padding:16px 20px;display:grid;gap:10px}
 }
 

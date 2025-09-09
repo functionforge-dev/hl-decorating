@@ -5,6 +5,15 @@ if (navToggle && nav){
     const isOpen = nav.classList.toggle('open');
     navToggle.setAttribute('aria-expanded', String(isOpen));
   });
+  // Close menu on nav link tap (mobile UX)
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (nav.classList.contains('open')){
+        nav.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
 }
 
 const yearEl = document.getElementById('year');
